@@ -4,12 +4,13 @@ import warnings
 warnings.filterwarnings('ignore')
 import scipy.sparse as sp
 
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def reader():
-    movie = pd.read_excel('Processed File.xls')
+    movie = pd.read_excel('Preprocessed File.xls')
     return movie
 
 def transformer(data):
@@ -31,12 +32,18 @@ def recommendations(title,data,model):
     sim = sorted(sim, key=lambda x: x[1], reverse=True)
     sim = sim[1:6]
     movie_indices = [i[0] for i in sim]
-    return data['original_title'].iloc[movie_indices]
+    titles = data['original_title'].iloc[movie_indices]
+    directors = data['Director'].iloc[movie_indices]
+    recommendation_table = pd.DataFrame(columns=['Title','Director'])
+    recommendation_table['Title']=titles
+    recommendation_table['Director']=directors
+    return recommendation_table
 
 def results(title):
     data = reader()
     if title not in data['original_title'].unique():
         return "The movie is not in the database. Kindly try another view"
     sim_model = transformer(data)
-    return list(recommendations(title,data,sim_model))
+    return recommendations(title,data,sim_model)
+    # print(list(recommendations(title,data,sim_model)))
 

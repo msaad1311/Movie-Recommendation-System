@@ -23,15 +23,6 @@ def main():
             res=Recommendation.results(movie_name)
             return render_template('positive.html',movie_names=res['Title'].tolist(),
             director=res['Director'].tolist(),search_name=movie_name)
-            # return 'welcome'
-        # return render_template('positive.html')
-
-# @app.route('/recommend',methods=['GET'])
-# def recmd():
-#     movie = request.form['title']
-#     res=Recommendation.results(movie)
-#     return res
-
 
 if __name__ == "__main__":
     app.run(debug=True)

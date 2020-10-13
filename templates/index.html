@@ -9,6 +9,8 @@
 <style>
 html {
   box-sizing: border-box;
+  background-image: url('background.jpg');
+  
 }
 
 *,
@@ -21,8 +23,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 100%;
-  background-color: #F1FDFF;
-  /* background-image: url('background.jpg') */
+  /* background-color: #F1FDFF; */
+
   line-height: 1.5;
   color: #000;
 }
@@ -427,7 +429,20 @@ figure {
   background-repeat: no-repeat;
   background-size: cover;
 }
-    
+
+.recom{
+  color: white;
+}
+
+u{
+  color: white;
+  text-decoration: none;
+}
+
+a{
+  color: aquamarine;
+}
+
     .movie{
         height: 70vh;
         margin-top: 15vh;
@@ -435,7 +450,7 @@ figure {
         margin-right: 5vh;
         margin-left: 5vh;
         display: block;
-        background-color: white;
+        background-color:rgba(29, 29, 29, 0.3);
         /* background-image: url('background.jpg'); */
         border-radius: 20px;
         padding: 1em;
@@ -477,7 +492,7 @@ figure {
         </form>
         <p style="color: #919191; padding: 1em;">The model uses <b>Content Based Recommendations</b> to find similar movies. Intuitive idea behind is <i>"If a person likes a particular item, he/she will also like an item that is similar to it."</i> The dataset is taken from <a href="https://www.kaggle.com/" target="_blank">Kaggle.com</a>.</p>
         <br>
-        <p>Read more on recommendation systems on <a href="https://developers.google.com/machine-learning/recommendation" target="_blank">Google Developers Machine Learning Blogs</a>.</p>
+        <p class="recom">Read more on recommendation systems on <a href="https://developers.google.com/machine-learning/recommendation" target="_blank">Google Developers Machine Learning Blogs</a>.</p>
   </div>
 <!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js'></script>

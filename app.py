@@ -4,7 +4,7 @@ import Recommendation
 import pandas as pd
 
 app = Flask(__name__,template_folder='templates')
-data = pd.read_csv('Preprocessed File.csv')
+data = pd.read_csv('test.bz',compression='bz2')
 data=data.loc[:, ~data.columns.str.contains('^Unnamed')]
 
 @app.route("/",methods=['GET','POST'])

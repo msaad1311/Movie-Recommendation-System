@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def reader():
-    movie = pd.read_excel('Preprocessed File.xls')
+    movie = pd.read_csv('Preprocessed File.csv')
     return movie
 
 def transformer(data):

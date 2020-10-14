@@ -4,7 +4,7 @@ import Recommendation
 import pandas as pd
 
 app = Flask(__name__,template_folder='templates')
-data = pd.read_csv('test.bz',compression='bz2')
+data = pd.read_csv('Preprocessed File.csv')
 data=data.loc[:, ~data.columns.str.contains('^Unnamed')]
 
 @app.route("/",methods=['GET','POST'])
@@ -22,5 +22,5 @@ def main():
             return render_template('positive.html',movie_names=res['Title'].tolist(),director=res['Director'].tolist(),search_name=movie_name)
 
 if __name__ == "__main__":
-    # app.run(debug=True)
-    app.run(host='0.0.0.0',port=8080)
+    app.run(debug=True)
+    # app.run(host='0.0.0.0',port=8080)

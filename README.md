@@ -32,7 +32,8 @@ Today in the era of science and technology, recommendation system plays a vital 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
 [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) 
 [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
-[<img target="_blank" src="/Pictures/AWS.png" width=200>](https://scikit-learn.org/stable/) 
+[<img target="_blank" src="/Pictures/AWS.png" width=200>](https://aws.amazon.com) 
+[<img target="_blank" src="/Pictures/Heroku.png" width=200>](https://www.heroku.com) 
 
 ## Installation
 

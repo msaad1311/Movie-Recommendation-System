@@ -29,7 +29,10 @@ Today in the era of science and technology, recommendation system plays a vital 
 
 ## Tools Used
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) [<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
+[<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=280>](https://gunicorn.org) 
+[<img target="_blank" src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width=200>](https://scikit-learn.org/stable/) 
+[<img target="_blank" src="/Pictures/AWS.png" width=200>](https://scikit-learn.org/stable/) 
 
 ## Installation
 
@@ -41,7 +44,7 @@ pip install -r requirements.txt
 
 ## Bug / Feature Request
 
-If you find a bug, kindly raise an [issue](https://github.com/msaad1311/Flight-Fare/issues) by including your search query and the expected result and I will try to resolve it. 
+If you find a bug, kindly raise an [issue](https://github.com/msaad1311/Movie-Recommendation-System/issues) by including your search query and the expected result and I will try to resolve it. 
 
 ## Future Work
 
@@ -51,4 +54,4 @@ If you find a bug, kindly raise an [issue](https://github.com/msaad1311/Flight-F
 
 ## Acknowledgment 
 
-* [Muhammad Anas Shahid](https://github.com/Mandal-21/Flight-Price-Prediction) for the support in HTML files.
+* [Muhammad Anas Shahid](https://github.com/Anasshahidd21) for the support in HTML files.

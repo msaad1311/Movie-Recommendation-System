@@ -4,6 +4,7 @@ import warnings
 warnings.filterwarnings('ignore')
 import scipy.sparse as sp
 import pickle
+import gc
 
 
 from sklearn.feature_extraction.text import CountVectorizer
@@ -26,8 +27,16 @@ def transformer(data,save=False,present=False):
     tf_matrix=tfidf.fit_transform(data['overview'])
     
     combo = sp.hstack([cvt_matrix,tf_matrix],format='csr')
+    del(cvt_matrix)
+    del(tf_matrix)
+    
+    gc.collect()
     
     similarity = cosine_similarity(combo,combo)
+    
+    del(combo)
+    gc.collect()
+   
     if save:
         return count,tfidf
     else:
